@@ -1,0 +1,27 @@
+{
+  "React boilerplate test file": {
+    "prefix": "rbt",
+    "body": [
+      "import React from \"react\";",
+      "import { render } from \"@testing-library/react\";",
+      "import $0 from \"./$0\"",
+      "\ndescribe(\"The $0 component\", () => {",
+      "\tit(\"should match the snapshot\", () => {",
+      "\t\tconst {container} = render(<$0 />)",
+      "\t\texpect(container).toMatchSnapshot()",
+      "\t})",
+      "})"
+    ],
+    "description": "Boilerplate react component test file with snapshot test"
+  },
+  "Snapshot test": {
+    "prefix": "snt",
+    "body": [
+      "it(\"should match the snapshot\", () => {",
+      "\tconst {container} = render(<$0 />)",
+      "\texpect(container).toMatchSnapshot()",
+      "})"
+    ],
+    "description": "React component snapshot test"
+  }
+}
